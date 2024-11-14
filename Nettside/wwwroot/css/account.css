@@ -1,5 +1,5 @@
 ﻿.account-container {
-    background-image: url('../images/account-bg.jpg');
+    background-color: rgba(208, 236, 214, 1);
     background-size: cover;
     background-position: center;
     background-repeat: repeat-y;
@@ -11,11 +11,17 @@
 }
 
 .account-box {
-    background-color: white;
+    background-color: rgba(235, 190, 118, 1);
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     max-width: 500px;
     width: 100%;
     opacity: .9;
+}
+
+.btn-success {
+    background-color: rgba(21, 102, 48, 1);
+    border-color: rgba(21, 102, 48, 1);
+    border-radius: 6px;
 }

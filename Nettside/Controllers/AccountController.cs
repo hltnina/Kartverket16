@@ -54,7 +54,8 @@ namespace UsersApp.Controllers
             {
                 Users users = new Users
                 {
-                    FullName = model.Name,
+                    FirstName = model.FirstName,
+                    LastName = model.LastName,
                     Email = model.Email,
                     UserName = model.Email,
                 };

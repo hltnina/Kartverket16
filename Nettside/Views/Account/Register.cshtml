@@ -1,4 +1,4 @@
-﻿﻿@using UsersApp.ViewModels;
+﻿@using UsersApp.ViewModels;
 @model RegisterViewModel;
 
 @{
@@ -8,13 +8,18 @@
 
 <div class="account-container">
     <div class="account-box">
-        <h2 class="text-center mb-4">Register</h2>
+        <h2 class="text-center mb-4">Register now</h2>
         <form asp-action="Register" method="post">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="mb-3">
-                <label asp-for="Name" class="form-label"></label>
-                <input asp-for="Name" class="form-control" />
-                <span asp-validation-for="Name" class="text-danger"></span>
+                <label asp-for="FirstName" class="form-label">First Name</label>
+                <input asp-for="FirstName" class="form-control" />
+                <span asp-validation-for="FirstName" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="LastName" class="form-label">Last name</label>
+                <input asp-for="LastName" class="form-control" />
+                <span asp-validation-for="LastName" class="text-danger"></span>
             </div>
             <div class="mb-3">
                 <label asp-for="Email" class="form-label"></label>
@@ -33,10 +38,10 @@
             </div>
             <input type="submit" value="Register" class="btn btn-success w-100 p-2" />
             <p class="text-center mt-2">
-                Already have an account? <a asp-controller="Account" asp-action="Login" class="text-decoration-none">Login</a>
+                Already have an account? <a asp-controller="Account" asp-action="Login" class="text-decoration-underline" style="color: rgba(21, 102, 48, 1)">Login</a>
             </p>
             <div class="text-center">
-                <a asp-controller="Home" asp-action="Index" class="text-decoration-none mt-3">Back</a>
+                <a asp-controller="Home" asp-action="Index" class="text-decoration-none mt-3" style="color: rgba(21, 102, 48, 1)">Back</a>
             </div>
         </form>
     </div>

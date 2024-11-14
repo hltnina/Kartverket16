@@ -1,4 +1,4 @@
-﻿﻿@using UsersApp.ViewModels;
+﻿@using UsersApp.ViewModels;
 @model LoginViewModel;
 
 @{
@@ -22,7 +22,7 @@
                 <span asp-validation-for="Password" class="text-danger"></span>
             </div>
             <div class="float-end">
-                <a asp-controller="Account" asp-action="VerifyEmail" class="text-decoration-none">
+                <a asp-controller="Account" asp-action="VerifyEmail" class="text-decoration-none" style="color: rgba(21, 102, 48, 1)">
                     Forgot password?
                 </a>
             </div>
@@ -34,10 +34,10 @@
             </div>
             <input type="submit" value="Login" class="btn btn-success w-100 p-2" />
             <p class="text-center mt-2">
-                Don't have an account? <a asp-controller="Account" asp-action="Register" class="text-decoration-none">Register</a>
+                Don't have an account? <a asp-controller="Account" asp-action="Register" class="text-decoration-underline" style="color: rgba(21, 102, 48, 1)">Register here</a>
             </p>
             <div class="text-center">
-                <a asp-controller="Home" asp-action="Index" class="text-decoration-none mt-3">Back</a>
+                <a asp-controller="Home" asp-action="Index" class="text-decoration-none mt-3" style="color: rgba(21, 102, 48, 1)">Back</a>
             </div>
         </form>
     </div>
