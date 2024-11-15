@@ -48,16 +48,24 @@
         object-fit: contain; /* Ensure SVG is scaled properly */
 }
 
+.fullDescription {
+    line-height: 1.5;
+}
+
 .button-container {
     flex: 0 0 auto; /* Keeps the button size fixed */
 }
 .AreaChangeBtn {
     cursor: pointer;
-    background-color: peachpuff;
+    background-color: rgba(252, 235, 205, 1);
     width: 500px;
     padding: 50px;
-    margin: 10px;
+    margin: 130px;
+    border-radius: 8px;
+    margin-top: -250px;
+    margin-left: -10px;
 }
 .AreaChangeBtn:hover {
-    background-color: #F7DFD7;
+    background-color: rgba(252, 235, 205, 1);
+    border-radius: 8px;
 }
