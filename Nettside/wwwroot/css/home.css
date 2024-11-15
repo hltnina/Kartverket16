@@ -1,0 +1,63 @@
+﻿body {
+    /*background-color: #D0ECD6;*/
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+/* Flex container for text and image */
+.content-container {
+    display: flex;
+    justify-content: space-between; /* Ensures space between text and image */
+    align-items: center; /* Vertically aligns the text and image */
+    width: 100%; /* Ensure container takes full width of the page */
+    padding: 20px; /* Optional: Adds space around the container */
+}
+
+/* Text content */
+.description {
+    flex: 1; /* This makes the description take available space */
+}
+
+/* Title styling */
+.title {
+    margin-top: 3rem;
+    font-size: 2rem;
+    font-family: 'Arial, Helvetica, sans-serif';
+    font-weight: bold;
+    color: black; /* Example color */
+}
+
+/* Full description text styling */
+.fullDescription {
+    font-size: 1.2rem;
+    font-family: 'Arial, Helvetica, sans-serif';
+    font-weight: 100;
+    color: black; /* Example color */
+}
+
+/* SVG container */
+.picture {
+    display: flex;
+    justify-content: flex-end; /* Aligns the SVG to the right side */
+    align-items: center; /* Vertically aligns the SVG */
+    margin-bottom: 2rem;
+}
+
+    /* SVG image styling */
+.picture img {
+        object-fit: contain; /* Ensure SVG is scaled properly */
+}
+
+.button-container {
+    flex: 0 0 auto; /* Keeps the button size fixed */
+}
+.AreaChangeBtn {
+    cursor: pointer;
+    background-color: peachpuff;
+    width: 500px;
+    padding: 50px;
+    margin: 10px;
+}
+.AreaChangeBtn:hover {
+    background-color: #F7DFD7;
+}

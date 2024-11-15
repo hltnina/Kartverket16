@@ -271,6 +271,14 @@
             },
             "Patterns": null
           },
+          "home.css": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "css/home.css"
+            },
+            "Patterns": null
+          },
           "site.css": {
             "Children": null,
             "Asset": {
@@ -430,6 +438,30 @@
             "Asset": {
               "ContentRootIndex": 0,
               "SubPath": "images/account-bg.jpg"
+            },
+            "Patterns": null
+          },
+          "kartverket.svg": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "images/kartverket.svg"
+            },
+            "Patterns": null
+          },
+          "menubar.svg": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "images/menubar.svg"
+            },
+            "Patterns": null
+          },
+          "nature.jpg": {
+            "Children": null,
+            "Asset": {
+              "ContentRootIndex": 0,
+              "SubPath": "images/nature.jpg"
             },
             "Patterns": null
           }
