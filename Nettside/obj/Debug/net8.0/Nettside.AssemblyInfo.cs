@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Nettside")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e5bc7bb6ebd4521d9a8d357553bedf7452eb6088")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6102e7d66c8cac5fa3b19b7711bd46631400fb38")]
 [assembly: System.Reflection.AssemblyProductAttribute("Nettside")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Nettside")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
