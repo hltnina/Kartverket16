@@ -3,30 +3,8 @@
     ViewData["Title"] = "Home Page";
 }
 
+<div class="text-center">
+    <h1 class="display-4">Kartverkets nettside!</h1>
+    <p>Velkommen!</p>
 
-<link rel="stylesheet" href="~/css/home.css" asp-append-version="true" />
-<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-
-<body>
-<div class="description">
-    <h1 class="title">Her kan du melde inn kartendringer</h1>
-        <p class="fullDescription">
-        <br />
-        Dersom du har funnet ut at<br />
-        det er mangler i kartet, så <br />
-        så kan du hjelpe oss med<br />
-        å oppdatere det! <br />
-    </p>
 </div>
-<div class="picture">
-        <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
-            <img src="~/images/nature.jpg" alt="nature" style="height: 350px;" />
-        </a>
-</div>
-    <div class="button-container">
-        <h1 class="AreaChangeBtn" onclick="window.location.href='@Url.Action("RegisterAreaChange", "Home")'">
-            Meld inn endring her:
-        </h1>
-    </div>
-</body>
-
