@@ -29,6 +29,7 @@ namespace Nettside.Controllers
             return View();
         }
 
+        [ValidateAntiForgeryToken]
         [AllowAnonymous]
         [HttpPost]
         public async Task<IActionResult> Login(LoginViewModel model)
@@ -88,7 +89,8 @@ namespace Nettside.Controllers
             return View();
         }
 
-        
+
+        [ValidateAntiForgeryToken]
         [AllowAnonymous]  // allows anonymous users to attempt registration
         [HttpPost]
         public async Task<IActionResult> Register(RegisterViewModel model)
@@ -158,6 +160,7 @@ namespace Nettside.Controllers
             return View(new ChangePasswordViewModel { Email = username });
         }
 
+        [ValidateAntiForgeryToken]
         [HttpPost]
         public async Task<IActionResult> ChangePassword(ChangePasswordViewModel model)
         {
