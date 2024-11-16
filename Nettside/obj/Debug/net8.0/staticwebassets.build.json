@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "J7i2gz1YEO3mrMrFi3/7Lkc4odP9PXR4S4/NIldv/5s=",
+  "Hash": "cKmf5nj7Pjy/zvk3QNOcHQXNUz2Ug9ozmaLIpoo3VKs=",
   "Source": "Nettside",
   "BasePath": "_content/Nettside",
   "Mode": "Default",
@@ -1041,6 +1041,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/images/kartverket.svg"
+    },
+    {
+      "Identity": "/Users/ninahuynh/RiderProjects/Kartverket16/Nettside/wwwroot/images/logo.png.jpg",
+      "SourceId": "Nettside",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/ninahuynh/RiderProjects/Kartverket16/Nettside/wwwroot/",
+      "BasePath": "_content/Nettside",
+      "RelativePath": "images/logo.png.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/logo.png.jpg"
     },
     {
       "Identity": "/Users/ninahuynh/RiderProjects/Kartverket16/Nettside/wwwroot/images/menubar.svg",

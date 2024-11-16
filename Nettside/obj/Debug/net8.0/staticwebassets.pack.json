@@ -213,6 +213,10 @@
       "PackagePath": "staticwebassets/images/kartverket.svg"
     },
     {
+      "Id": "/Users/ninahuynh/RiderProjects/Kartverket16/Nettside/wwwroot/images/logo.png.jpg",
+      "PackagePath": "staticwebassets/images/logo.png.jpg"
+    },
+    {
       "Id": "/Users/ninahuynh/RiderProjects/Kartverket16/Nettside/wwwroot/images/menubar.svg",
       "PackagePath": "staticwebassets/images/menubar.svg"
     },
