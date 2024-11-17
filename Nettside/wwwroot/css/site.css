@@ -5,12 +5,14 @@
     margin-top: 0; 
 }
 
+/* Flex container for the bottom of the page */
 .footer-container {
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
     max-width: 1200px;
-    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 15px;
 }
 
 .footer-section {
@@ -32,15 +34,18 @@
     color: #000;
 }
 
+/* Text styling, bottom of the page */
 .footer-section a {
-    color: #2e7d32;
+    color: rgba(21, 102, 48, 1);
     text-decoration: none;
 }
 
+/* Text styling */
 .footer-section a:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* Creates underline*/
 }
 
+/* Kartverket logo */
 .logo {
     width: 150px;
     height: auto;

@@ -205,10 +205,6 @@
       "PackagePath": "staticwebassets/favicon.ico"
     },
     {
-      "Id": "/Users/ninahuynh/RiderProjects/Kartverket16/Nettside/wwwroot/images/account-bg.jpg",
-      "PackagePath": "staticwebassets/images/account-bg.jpg"
-    },
-    {
       "Id": "/Users/ninahuynh/RiderProjects/Kartverket16/Nettside/wwwroot/images/kartverket.svg",
       "PackagePath": "staticwebassets/images/kartverket.svg"
     },

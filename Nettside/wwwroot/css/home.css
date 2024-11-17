@@ -43,7 +43,7 @@
     margin-bottom: 2rem;
 }
 
-    /* SVG image styling */
+/* SVG image styling */
 .picture img {
         object-fit: contain; /* Ensure SVG is scaled properly */
 }
@@ -52,20 +52,24 @@
     line-height: 1.5;
 }
 
+
 .button-container {
     flex: 0 0 auto; /* Keeps the button size fixed */
 }
 
+/* Register change button in home page */
 .AreaChangeBtn {
     cursor: pointer;
-    background-color: rgba(252, 235, 205, 1);
+    background-color: rgba(252, 235, 205, 1);  /* The color of the button */
     width: 500px;
     padding: 50px;
-    margin: 200px;
-    border-radius: 8px;
-    margin-top: -280px;
+    margin: 200px; /* Ensures space around register change btn */
+    border-radius: 8px; /* Rounds the corner of the btn */
+    margin-top: -280px; /* Decides where on the page the button will be places */
     margin-left: -10px;
 }
+
+/* Register change button in home page */
 .AreaChangeBtn:hover {
     background-color: rgba(252, 235, 205, 1);
     border-radius: 8px;
