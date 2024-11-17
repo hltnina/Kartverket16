@@ -55,14 +55,15 @@
 .button-container {
     flex: 0 0 auto; /* Keeps the button size fixed */
 }
+
 .AreaChangeBtn {
     cursor: pointer;
     background-color: rgba(252, 235, 205, 1);
     width: 500px;
     padding: 50px;
-    margin: 130px;
+    margin: 200px;
     border-radius: 8px;
-    margin-top: -250px;
+    margin-top: -280px;
     margin-left: -10px;
 }
 .AreaChangeBtn:hover {
