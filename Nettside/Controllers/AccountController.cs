@@ -9,26 +9,42 @@ using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace Nettside.Controllers
 {
+    /// <summary>
+    /// Controller for handling account-related actions such as login, registration, and profile management
+    /// </summary>
 
-    [Authorize] // requires authentication for all actions by default
+    [Authorize] // Requires authentication for all actions by default unless otherwise specified
     public class AccountController : Controller
     {
-        private readonly SignInManager<Users> signInManager;
-        private readonly UserManager<Users> userManager;
+        private readonly SignInManager<Users> signInManager; // service provided by asp.net core identity
+        private readonly UserManager<Users> userManager; // service provided by asp.net core identity
 
+
+        /// <summary>
+        /// Constructor for injecting SignInManager and UserManager services
+        /// </summary>
+        /// <param name="signInManager">a service to manage user sign-in operations</param>
+        /// <param name="userManager">a service to manage user interactions</param>
         public AccountController(SignInManager<Users> signInManager, UserManager<Users> userManager) // constructor to inject UserManager & SignInManager services.
         {
             this.signInManager = signInManager;
             this.userManager = userManager;
         }
 
+
+        // displays the login page
         [HttpGet]
-        [AllowAnonymous]  // GET method login page
+        [AllowAnonymous]  // allows access without authentication
         public IActionResult Login()
         {
             return View();
         }
 
+        /// <summary>
+        /// Handles user login requests
+        /// </summary>
+        /// <param name="model">the login form data</param>
+        /// <returns>redirects to the home page if successful or redisplays the login form with errors</returns>
         [ValidateAntiForgeryToken]
         [AllowAnonymous]
         [HttpPost]
@@ -36,7 +52,7 @@ namespace Nettside.Controllers
         {
             if (ModelState.IsValid)
             {
-                // attempt to sign in the user with provided credentials
+               // attempt to sign in the user with the provided credentials
                 var result = await signInManager.PasswordSignInAsync(model.Email, model.Password, model.RememberMe, false);
 
                 if (result.Succeeded)
@@ -54,7 +70,10 @@ namespace Nettside.Controllers
 
 
 
-
+        /// <summary>
+        /// displays the profile page for the logged-in user
+        /// </summary>
+        /// <returns>the profile page view or redirects to login if the user is not found</returns>
         [HttpGet]
         public async Task<IActionResult> ProfilePage()
         {
@@ -62,7 +81,7 @@ namespace Nettside.Controllers
 
             if (currentUser != null)
             {
-                // creating a ViewModel with current user's details
+               // create a viewmodel with the current user's details
                 var profilePageViewModel = new ProfilePageViewModel
                 {
                     FirstName = currentUser.FirstName,
@@ -74,14 +93,14 @@ namespace Nettside.Controllers
                 return View(profilePageViewModel);
 
             }
-            // show error notification
+           // redirect to login if the user is not authenticated
             return RedirectToAction("Login");
         }
 
 
 
-
-        [AllowAnonymous] // GET method for registration page
+        // displays the registration page
+        [AllowAnonymous] 
         [HttpGet]
 
         public IActionResult Register()
@@ -90,8 +109,13 @@ namespace Nettside.Controllers
         }
 
 
+        /// <summary>
+        /// Handles user registration requests
+        /// </summary>
+        /// <param name="model">the registration form data</param>
+        /// <returns>redirects to login on success or redisplays the form with errors</returns>
         [ValidateAntiForgeryToken]
-        [AllowAnonymous]  // allows anonymous users to attempt registration
+        [AllowAnonymous] 
         [HttpPost]
         public async Task<IActionResult> Register(RegisterViewModel model)
         {
@@ -125,12 +149,18 @@ namespace Nettside.Controllers
         }
 
 
+        // displays the email verification
         public IActionResult VerifyEmail()
         {
             return View();
         }
 
-        [AllowAnonymous] // this allows anonymous users to submit the VerifyEmail form
+        /// <summary>
+        /// handles email verification submissions
+        /// </summary>
+        /// <param name="model">the email verification form data</param>
+        /// <returns>redirects to password change on success or redisplays the form with errors</returns>
+        [AllowAnonymous] 
         [HttpPost]
         public async Task<IActionResult> VerifyEmail(VerifyEmailViewModel model)
         {
@@ -151,6 +181,12 @@ namespace Nettside.Controllers
             return View(model);
         }
 
+
+        /// <summary>
+        /// displays the passwordchange page for a specified user
+        /// </summary>
+        /// <param name="username">the username of the user who is changing their passsword</param>
+        /// <returns>the password change form or redirects to verifyemail if no username is provided</returns>
         public IActionResult ChangePassword(string username)
         {
             if (string.IsNullOrEmpty(username))
@@ -160,6 +196,12 @@ namespace Nettside.Controllers
             return View(new ChangePasswordViewModel { Email = username });
         }
 
+
+        /// <summary>
+        /// handles password change submissions
+        /// </summary>
+        /// <param name="model">the password change form data</param>
+        /// <returns>redirects to login on success or redisplays the form with errors</returns>
         [ValidateAntiForgeryToken]
         [HttpPost]
         public async Task<IActionResult> ChangePassword(ChangePasswordViewModel model)
@@ -200,6 +242,7 @@ namespace Nettside.Controllers
         }
 
 
+        // logs out the user 
         [HttpGet]
         public async Task<IActionResult> Logout()
         {
