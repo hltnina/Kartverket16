@@ -243,7 +243,8 @@ namespace Nettside.Controllers
 
 
         // logs out the user 
-        [HttpGet]
+        [ValidateAntiForgeryToken]
+        [HttpPost]
         public async Task<IActionResult> Logout()
         {
             await signInManager.SignOutAsync();
