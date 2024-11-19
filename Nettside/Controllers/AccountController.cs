@@ -173,11 +173,11 @@ namespace Nettside.Controllers
         {
             if (ModelState.IsValid)
             {
-                var user = await userManager.FindByNameAsync(model.Email);
+                var user = await userManager.FindByEmailAsync(model.Email);
 
                 if (user == null)
                 {
-                    ModelState.AddModelError("", "Something is wrong!");
+                    ModelState.AddModelError("", "No user found with the specified email address.");
                     return View(model);
                 }
                 else
@@ -215,7 +215,7 @@ namespace Nettside.Controllers
         {
             if (ModelState.IsValid)
             {
-                var user = await userManager.FindByNameAsync(model.Email);
+                var user = await userManager.FindByEmailAsync(model.Email);
                 if (user != null)
                 {
                     var result = await userManager.RemovePasswordAsync(user);
@@ -250,7 +250,8 @@ namespace Nettside.Controllers
 
 
         // logs out the user 
-        [HttpGet]
+        [ValidateAntiForgeryToken]
+        [HttpPost]
         public async Task<IActionResult> Logout()
         {
             await signInManager.SignOutAsync();

@@ -5,23 +5,36 @@ using Nettside.Data;
 
 namespace Nettside.Controllers
 {
+
+    /// <summary>
+    /// respomsible for managing actions related to the homepage and error handling
+    /// </summary>
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly ILogger<HomeController> _logger; // logger service for logging information and errors
 
-        private readonly AppDbContext _context;
+        private readonly AppDbContext _context; // database context for accessing and saving data
 
-        // Definerer lister som en in-memory-lagring. 
+        // static lists to temporarily store data in memory for positions and area changes
         private static List<PositionModel> positions = new List<PositionModel>();
         private static List<AreaChange> changes = new List<AreaChange>();
 
+
+
+        /// <summary>
+        /// constructor for injecting dependencies like the logger and database context
+        /// </summary>
+        /// <param name="logger"></param>
+        /// <param name="context"></param>
         public HomeController(ILogger<HomeController> logger, AppDbContext context)
         {
             _logger = logger;
             _context = context;
         }
 
-        // Action metode for fremvisning av viewet "index".
+        
+
+        // handles GET requests to display the homepage
         [HttpGet]
         public IActionResult Index()
         {
@@ -29,26 +42,37 @@ namespace Nettside.Controllers
         }
 
 
+        // displays the 'correctmap' view for submitting map corrections
         [HttpGet]
         public IActionResult CorrectMap()
         {
             return View();
         }
 
+
+        /// <summary>
+        /// handles post requests for map correction submissions
+        /// </summary>
+        /// <param name="model">the position model containing submitted correction data</param>
+        /// <returns></returns>
         [HttpPost]
         public IActionResult CorrectMap(PositionModel model)
         {
             if (ModelState.IsValid)
             {
-                // Legger ny posisjon til "positions" listen
+                // add the valid position data to the in-memory list
                 positions.Add(model);
 
-                // viser oppsummering view etter data har blitt registrert og lagret i positions listen
+
+                // redirect to the overview of corrections
                 return View("CorrectionOverview", positions);
             }
             return View();
         }
 
+
+
+       
         [HttpGet]
         public IActionResult CorrectionOverview()
         {
@@ -61,7 +85,12 @@ namespace Nettside.Controllers
             return View();
         }
 
-        // Handle form submission to register a new change
+        /// <summary>
+        /// handles the submission of new area change data, validates it, and saves it to the database
+        /// </summary>
+        /// <param name="geoJson">the geojson string representing the area changw</param>
+        /// <param name="description">description of the area change</param>
+        /// <returns>redirects to the "arechangeoverview" view if successful, or returns a badrequest if data is invalid</returns>
         [HttpPost]
         public IActionResult RegisterAreaChange(string geoJson, string description)
         {
@@ -97,7 +126,7 @@ namespace Nettside.Controllers
             return View();
         }
 
-        // Display the overview of registered changes. 
+        // Display the overview of registered changes fetched from the database
         [HttpGet]
         public IActionResult AreaChangeOverview()
         {
