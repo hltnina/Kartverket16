@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/zRNDRxI8PU=",
+  "dgSpecHash": "EFOxvgK+1MY=",
   "success": true,
-  "projectFilePath": "/Users/ninahuynh/RiderProjects/Kartverket16/Nettside/Nettside.csproj",
+  "projectFilePath": "/Users/ninahuynh/Documents/RiderProjects/Kartverket16/Nettside/Nettside.csproj",
   "expectedPackageFiles": [
     "/Users/ninahuynh/.nuget/packages/azure.core/1.35.0/azure.core.1.35.0.nupkg.sha512",
     "/Users/ninahuynh/.nuget/packages/azure.identity/1.10.3/azure.identity.1.10.3.nupkg.sha512",

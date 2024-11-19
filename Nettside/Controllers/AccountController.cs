@@ -39,7 +39,14 @@ namespace Nettside.Controllers
         {
             return View();
         }
-
+        
+        [HttpGet]
+        [AllowAnonymous]  // allows access without authentication
+        public IActionResult EmployeeOrMapuser()
+        {
+            return View();
+        }
+        
         /// <summary>
         /// Handles user login requests
         /// </summary>

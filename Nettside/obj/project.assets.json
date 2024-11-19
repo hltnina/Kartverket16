@@ -4656,11 +4656,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/ninahuynh/RiderProjects/Kartverket16/Nettside/Nettside.csproj",
+      "projectUniqueName": "/Users/ninahuynh/Documents/RiderProjects/Kartverket16/Nettside/Nettside.csproj",
       "projectName": "Nettside",
-      "projectPath": "/Users/ninahuynh/RiderProjects/Kartverket16/Nettside/Nettside.csproj",
+      "projectPath": "/Users/ninahuynh/Documents/RiderProjects/Kartverket16/Nettside/Nettside.csproj",
       "packagesPath": "/Users/ninahuynh/.nuget/packages/",
-      "outputPath": "/Users/ninahuynh/RiderProjects/Kartverket16/Nettside/obj/",
+      "outputPath": "/Users/ninahuynh/Documents/RiderProjects/Kartverket16/Nettside/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/ninahuynh/.nuget/NuGet/NuGet.Config"

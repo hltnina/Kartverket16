@@ -2,7 +2,7 @@
     background-color: #f9f9f9;
     padding: 20px;
     border-top: 3px solid #2e7d32; 
-    margin-top: 0; 
+    margin-top: 0;
 }
 
 /* Flex container for the bottom of the page */
@@ -16,10 +16,12 @@
 }
 
 .footer-section {
+    font-weight: 500;
+    text-decoration: underline;
     text-align: left;
     flex: 1;
     min-width: 150px;
-    margin: 10px;
+    margin-right: 100px;
 }
 
 .footer-section h4 {
