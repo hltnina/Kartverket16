@@ -4651,19 +4651,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/ninahuynh/.nuget/packages/": {}
+    "/Users/mahsarasoli/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/ninahuynh/Documents/RiderProjects/Kartverket16/Nettside/Nettside.csproj",
+      "projectUniqueName": "/Users/mahsarasoli/Documents/semester 3/IS-202/Kartverket16/Nettside/Nettside.csproj",
       "projectName": "Nettside",
-      "projectPath": "/Users/ninahuynh/Documents/RiderProjects/Kartverket16/Nettside/Nettside.csproj",
-      "packagesPath": "/Users/ninahuynh/.nuget/packages/",
-      "outputPath": "/Users/ninahuynh/Documents/RiderProjects/Kartverket16/Nettside/obj/",
+      "projectPath": "/Users/mahsarasoli/Documents/semester 3/IS-202/Kartverket16/Nettside/Nettside.csproj",
+      "packagesPath": "/Users/mahsarasoli/.nuget/packages/",
+      "outputPath": "/Users/mahsarasoli/Documents/semester 3/IS-202/Kartverket16/Nettside/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/ninahuynh/.nuget/NuGet/NuGet.Config"
+        "/Users/mahsarasoli/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -4742,7 +4742,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.401/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.403/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
