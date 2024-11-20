@@ -130,6 +130,7 @@ namespace Nettside.Controllers
             {
                 Users users = new Users
                 {
+                    UserName = model.Username,
                     FirstName = model.FirstName,
                     LastName = model.LastName,
                     Email = model.Email,

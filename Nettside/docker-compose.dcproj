@@ -4,10 +4,10 @@
     <ProjectVersion>2.1</ProjectVersion>
     <DockerTargetOS>Linux</DockerTargetOS>
     <DockerPublishLocally>False</DockerPublishLocally>
-    <ProjectGuid>84d5e17e-f6c4-4671-b78f-5abe3f31569b</ProjectGuid>
+    <ProjectGuid>3bcef4e2-af73-429b-a196-8a9a61520b23</ProjectGuid>
     <DockerLaunchAction>LaunchBrowser</DockerLaunchAction>
     <DockerServiceUrl>{Scheme}://localhost:{ServicePort}</DockerServiceUrl>
-    <DockerServiceName>Nettside</DockerServiceName>
+    <DockerServiceName>kartverketprosjekt</DockerServiceName>
   </PropertyGroup>
   <ItemGroup>
     <None Include="docker-compose.override.yml">

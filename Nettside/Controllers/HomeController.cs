@@ -108,7 +108,7 @@ namespace Nettside.Controllers
                 };
 
                 // Save to the database
-                _context.GeoChanges.Add(newGeoChange);
+                _context.GeoChange.Add(newGeoChange);
                 _context.SaveChanges();
 
                 // Redirect to the overview of changes
@@ -130,7 +130,7 @@ namespace Nettside.Controllers
         [HttpGet]
         public IActionResult AreaChangeOverview()
         {
-            var changes_cb = _context.GeoChanges.ToList();
+            var changes_cb = _context.GeoChange.ToList();
             return View(changes_cb);
         }
 

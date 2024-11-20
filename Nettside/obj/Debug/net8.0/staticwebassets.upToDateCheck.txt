@@ -45,13 +45,11 @@ C:\Users\jaypl\.nuget\packages\bootstrap\5.3.3\contentFiles\any\any\wwwroot\js\b
 wwwroot\css\account.css
 wwwroot\css\home.css
 wwwroot\css\site.css
-wwwroot\docker compose\docker-compose.override.yml
-wwwroot\docker compose\docker-compose.yml
 wwwroot\favicon.ico
-wwwroot\images\account-bg.jpg
 wwwroot\images\kartverket.svg
+wwwroot\images\Kartverket_bilde.jpeg
+wwwroot\images\logo.png.jpg
 wwwroot\images\menubar.svg
-wwwroot\images\nature.jpg
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map

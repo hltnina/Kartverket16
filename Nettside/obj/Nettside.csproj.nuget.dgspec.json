@@ -1,25 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "/Users/mahsarasoli/Documents/semester 3/IS-202/Kartverket16/Nettside/Nettside.csproj": {}
+    "C:\\Users\\jaypl\\Documents\\UiA\\BACIT-2\\IS-202\\Kartverket16\\Nettside\\Nettside.csproj": {}
   },
   "projects": {
-    "/Users/mahsarasoli/Documents/semester 3/IS-202/Kartverket16/Nettside/Nettside.csproj": {
+    "C:\\Users\\jaypl\\Documents\\UiA\\BACIT-2\\IS-202\\Kartverket16\\Nettside\\Nettside.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/mahsarasoli/Documents/semester 3/IS-202/Kartverket16/Nettside/Nettside.csproj",
+        "projectUniqueName": "C:\\Users\\jaypl\\Documents\\UiA\\BACIT-2\\IS-202\\Kartverket16\\Nettside\\Nettside.csproj",
         "projectName": "Nettside",
-        "projectPath": "/Users/mahsarasoli/Documents/semester 3/IS-202/Kartverket16/Nettside/Nettside.csproj",
-        "packagesPath": "/Users/mahsarasoli/.nuget/packages/",
-        "outputPath": "/Users/mahsarasoli/Documents/semester 3/IS-202/Kartverket16/Nettside/obj/",
+        "projectPath": "C:\\Users\\jaypl\\Documents\\UiA\\BACIT-2\\IS-202\\Kartverket16\\Nettside\\Nettside.csproj",
+        "packagesPath": "C:\\Users\\jaypl\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jaypl\\Documents\\UiA\\BACIT-2\\IS-202\\Kartverket16\\Nettside\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/mahsarasoli/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\jaypl\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -36,8 +42,9 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "direct"
-        }
+          "auditMode": "all"
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -64,6 +71,10 @@
             "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
               "target": "Package",
               "version": "[1.21.0, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[8.0.2, )"
             },
             "bootstrap": {
               "target": "Package",
@@ -93,7 +104,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.403/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
