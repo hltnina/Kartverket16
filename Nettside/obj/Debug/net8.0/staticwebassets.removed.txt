@@ -42,5 +42,5 @@ C:\Users\jaypl\.nuget\packages\bootstrap\5.3.3\contentFiles\any\any\wwwroot\js\b
 C:\Users\jaypl\.nuget\packages\bootstrap\5.3.3\contentFiles\any\any\wwwroot\js\bootstrap.js.map
 C:\Users\jaypl\.nuget\packages\bootstrap\5.3.3\contentFiles\any\any\wwwroot\js\bootstrap.min.js
 C:\Users\jaypl\.nuget\packages\bootstrap\5.3.3\contentFiles\any\any\wwwroot\js\bootstrap.min.js.map
-C:\Users\Aaron\Source\Repos\Kartverket16\Nettside\wwwroot\images\account-bg.jpg
-C:\Users\Aaron\Source\Repos\Kartverket16\Nettside\wwwroot\images\nature.jpg
+C:\Kartverket16\Nettside\wwwroot\images\account-bg.jpg
+C:\Kartverket16\Nettside\wwwroot\images\nature.jpg
